@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/f987ffaa4a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/uniszalogo.png" class="logo">
+                    <ul id="sidemenu">
+                    <li><a href="#header">Laman Utama</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#court">Gelanggang</a></li>
+                    <li><a href="#contact">Aduan</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>UNISZA COURT BOOKING</h1>
+                </div>
+            </div>
+            <!-- -------------tentang kami------------ -->
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        
+                    </div>
+                    <div class="about-col-2"></div>
+                    <h1 class="sub-little">Tentang</h1>
+                    <p>UniSZA Court Booking ini dibina khas untuk menyelesaikan satu masalah iaitu, pelajar 
+                        mendapati bahawa ianya sukar untuk bermain di gelanggang permainan di kolej kerana
+                        tiada sistem yang sistematik untuk mengatur jadual gelanggang. Staff juga sukar untuk 
+                        mengurus jadual dan data berkenaan gelanggang di kolej.<br>
+                        
+                       <br> Kini, pelajar boleh menempah gelanggang sukan dengan lebih mudah, lebih cepat, dan lebih berkesan.
+                        Kami harap dengan adanya sistem ini dapat membantu meringankan beban pelajar dan staff, sekaligus 
+                        dapat memajukan pusat sukan di UniSZA kampus Besut.
+                    </p>
+        </div>
+
+        <!--------------gelanggang---------------->
+        <div id="court">
+            <div class="container">
+                <h1 class="sub-title">Gelanggang</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/futsal.jpg">
+                        <div class="layer">
+                            <h3>Futsal</h3>
+                            <p></p>
+                            <a href="booking.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/padangbola.jpg">
+                        <div class="layer">
+                            <h3>Bola Sepak</h3>
+                            <p></p>
+                            <a href="booking.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/bolajaring.jpg">
+                        <div class="layer">
+                            <h3>Bola Jaring</h3>
+                            <p></p>
+                            <a href="booking.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------aduan-------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Aduan</h1>
+                        
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Nama Anda" required>
+                            <input type="number" name="noPhone" placeholder="Nombor Telefon Anda" required>
+                            <textarea name="Message" rows="6" placeholder="Sila Nyatakan Aduan"></textarea>
+                            <button type="submit" class="btn btn2">Hantar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+
+
+
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+
+    </body>
+</html>

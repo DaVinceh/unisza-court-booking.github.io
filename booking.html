@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Court Booking</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="booking.css" type="text/css"/>
+    </head>
+    <body>
+        <div>Tempah Gelanggang
+        <form id="courtBooking" action="" method="post">
+        <table border="1" style="border-collapse: collapse;">
+            <tr>
+                <td>Jenis Sukan: </td>
+                <td><input type="text" name="jenis" id="jenis" size="30"></td>
+            </tr>
+            <tr>
+                <td>Lokasi: </td>
+                <td><input type="text" name="lokasi" id="lokasi" size="30"></td>
+            </tr>
+            <tr>
+                <td>Tarikh: </td>
+                <td><input type="date" id="tarikh" name="tarikh"></td>
+            </tr>
+            <tr>
+                <td>Bermula: <br><br><br>
+                    Tamat:
+                </td>
+                <td><input type="time" id="bermula" name="bermula">
+                    <input type="time" id="tamat" name="tamat"></td>
+            </tr>
+            
+            <tr>
+                <td><input type="submit" id="addBooking" name="addBookingButton" value="Tempah"></td>
+                <td><input type="reset" id="resetBooking" name="resetBookingForm" value="Padam"></td>
+            </tr>
+        </table>
+        </form>
+    </div>
+    </body>
+</html>
